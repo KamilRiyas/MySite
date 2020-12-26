@@ -1,7 +1,8 @@
 <script>
-
+	import Header from './components/Header.svelte';
 </script>
 
+<Header/>
 <main>
 	<h1>Hello World!🤗</h1>
 	<p>Site is currently under construction.🙄</p>
