@@ -8,7 +8,19 @@
 	let currentNav;
 
 	const unsubscribe = activeNav.subscribe(value => {
-		currentNav = eval(value);
+		switch (value) {
+			case 'Profession':
+				currentNav = Profession;
+				break;
+			case 'Passion':
+				currentNav = Passion;
+				break;
+			case 'Interest':
+				currentNav = Interest;
+				break;
+			default:
+				break;
+		}
 	});
 </script>
 

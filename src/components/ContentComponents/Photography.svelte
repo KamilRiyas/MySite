@@ -3,7 +3,7 @@
 </script>
 
 <div>
-    Experience Content
+    Photography Content
 </div>
 
 <style>
