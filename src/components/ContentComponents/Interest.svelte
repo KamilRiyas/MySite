@@ -13,7 +13,19 @@
     });
 
     const unsubscribeContent = activeSubNav.subscribe(value => {
-        activeContent = eval(value);
+        switch (value) {
+			case 'Music':
+				activeContent = Music;
+				break;
+			case 'Movies':
+				activeContent = Movies;
+				break;
+			case 'Anime':
+				activeContent = Anime;
+				break;
+			default:
+				break;
+		}
     });
  
 </script>

@@ -13,7 +13,19 @@
     });
 
     const unsubscribeContent = activeSubNav.subscribe(value => {
-        activeContent = eval(value);
+        switch (value) {
+			case 'Hiking':
+				activeContent = Hiking;
+				break;
+			case 'Photography':
+				activeContent = Photography;
+				break;
+			case 'Badminton':
+				activeContent = Badminton;
+				break;
+			default:
+				break;
+		}
     });
  
 </script>
