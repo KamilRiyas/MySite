@@ -1,10 +1,9 @@
 <script>
-    import Logo from '../shared/Logo.svelte';
+    import Logo from '../../shared/Logo.svelte';
 
     let twitterLogo = '/img/twitter-logo.webp';
     let facebookLogo = '/img/facebook-logo.png';
     let githubLogo = '/img/github-logo.png';
-    let profilePic = '/img/MyPic.jpg';
 </script>
 
 <logoHolder>
