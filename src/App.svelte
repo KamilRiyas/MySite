@@ -1,19 +1,25 @@
 <script>
+	import { activeNav } from './stores/navigationStore';
+	import Header from './components/HeaderComponents/Header.svelte';
+	import Profession from './components/ContentComponents/Profession.svelte';
+	import Passion from './components/ContentComponents/Passion.svelte';
+	import Interest from './components/ContentComponents/Interest.svelte';
 
+	let currentNav;
+
+	const unsubscribe = activeNav.subscribe(value => {
+		currentNav = eval(value);
+	});
 </script>
 
+<Header />
 <main>
-	<h1>Hello World!🤗</h1>
-	<p>Site is currently under construction.🙄</p>
-	<p>Being built using Svelte</p>
+	<svelte:component this={currentNav} />
 </main>
 
 <style>
 	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+
 	}
 
 	h1 {
