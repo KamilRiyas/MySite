@@ -23,3 +23,11 @@ a:hover {
 a:visited {
 	color: rgb(0,80,160);
 }
+
+.content{
+	font-size: 12px;
+	width: 500px;
+	text-align: center;
+	justify-content: center;
+	margin:0 auto;
+}

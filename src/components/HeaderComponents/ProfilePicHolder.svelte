@@ -3,7 +3,7 @@
 </script>
 
 <div class="profile-pic">
-    <img src="/img/MyPic.jpg" alt="My pic">
+    <img src="/img/k.png" alt="My pic">
 </div>
 
 <style>

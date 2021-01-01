@@ -2,14 +2,15 @@
     import Logo from '../../shared/Logo.svelte';
 
     let twitterLogo = '/img/twitter-logo.webp';
-    let facebookLogo = '/img/facebook-logo.png';
     let githubLogo = '/img/github-logo.png';
+
+    let twitterLink = 'https://twitter.com/KamilRiyas';
+    let githubLink = 'https://github.com/KamilRiyas';
 </script>
 
 <logoHolder>
-    <Logo logoPath={twitterLogo}/>
-    <Logo logoPath={githubLogo}/>
-    <Logo logoPath={facebookLogo}/>
+    <Logo logoPath={twitterLogo} socialLink={twitterLink} />
+    <Logo logoPath={githubLogo} socialLink={githubLink} />
 </logoHolder>
 
 <style>

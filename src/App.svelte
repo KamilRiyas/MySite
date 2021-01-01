@@ -26,21 +26,15 @@
 
 <Header />
 <main>
-	<svelte:component this={currentNav} />
+	<div class="main-content">
+		<svelte:component this={currentNav} />
+	</div>
 </main>
 
 <style>
-	main {
+	.main-content{
 
 	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
 	@media (min-width: 640px) {
 		main {
 			max-width: none;
