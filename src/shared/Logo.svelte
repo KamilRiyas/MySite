@@ -1,9 +1,10 @@
 <script>
     export let logoPath;
+    export let socialLink;
 </script>
 
 <div class="logo">
-    <img src={logoPath} alt="Logo here">
+    <a href={socialLink} target="_blank"><img src={logoPath} alt="Logo here"></a>
 </div>
 
 <style>
@@ -15,5 +16,8 @@
         height: 30px;
         width: 30px;
         filter: grayscale(0.5);
+    }
+    img:hover{
+        cursor: pointer;
     }
 </style>

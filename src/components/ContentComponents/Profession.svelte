@@ -29,11 +29,11 @@
 	});
 </script>
 
-<profession>
+<div class="content-holder">
     <SubNavBar {holder}/>
     <svelte:component this={activeContent} />
-</profession>
+</div>
 
 <style>
 
-</style>
+</style>	

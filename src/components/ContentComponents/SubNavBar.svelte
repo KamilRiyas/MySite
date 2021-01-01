@@ -1,5 +1,7 @@
 <script>
     import { activeSubNav } from '../../stores/navigationStore.js';
+    import { fade } from 'svelte/transition';
+
     export let holder = '';
 
     let navs = [];
@@ -36,13 +38,13 @@
 
 </script>
 
-<subNavBar>
-    <ul>
+<div class="sub-nav">
+    <ul in:fade>
         {#each navs as nav}
             <li on:click={e => handleClick(e)} class:active={nav === activeMenu}>{nav}</li>
         {/each}
     </ul>
-</subNavBar>
+</div>
 
 <style>
     ul{
@@ -60,8 +62,11 @@
     li:hover{
         cursor: pointer;
     }
+    .sub-nav{
+        background-color:darksalmon;
+    }
     .active{
-        color:chocolate;
+        color:whitesmoke;
         border-bottom: black solid 2px;
     }
 </style>
