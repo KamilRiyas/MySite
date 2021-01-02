@@ -1,6 +1,8 @@
 <script>
     import ProfilePicHolder from './ProfilePicHolder.svelte';
     import NavLogoHolder from './NavLogoHolder.svelte';
+
+    import MediaQuery from 'svelte-media-query';
 </script>
 
 <header>
@@ -10,6 +12,7 @@
 
 <style>
     header{
+        width: 100%;
         height: 100px;
         background-color: bisque;
         display: flex;
