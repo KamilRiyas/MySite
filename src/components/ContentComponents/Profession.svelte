@@ -5,6 +5,9 @@
 	import Experience from './Experience.svelte';
 	import Projects from './Projects.svelte';
 
+
+    import MediaQuery from 'svelte-media-query';
+
 	let holder;
 	let activeContent = 'Expertise';
 
